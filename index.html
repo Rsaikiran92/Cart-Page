@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Cart</title>
+  </head>
+
+  <body>
+    <!-- Your code goes here -->
+    <div class="container">
+      <nav class="navbar">
+        <div class="iconmenu">
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="brand">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eQ~Ob1JfIzwztu98MeKCLhmFDsSaM5jYcgxP-Ly2Tr5OwtVarco-JLG09CZRJS3Eee~widDH5oBu4OSsPtHIBXXHT5Da5WK3~8pw70It-wNPaXbA3z89y1OWl-aRWqj7R1jh4e287I6kIxtmhxKF2Zo9mxw9aZLY6Gp4Kmrbnm2Gneb2BxfQxC7ptSZeJUh5RDV59-ptrsMitGTbiE5XhDw8Xls5P9r040aa8oRrVYD93cS9NlpSDQcPMnSym9P5M720gfKsgO4kLj8rnpsA~e1~iIYm0rOayKgsXxfMHTO-HATWs5i1wEYPH3MEPYRqwwFWLNaWZ33XutpZcDBKeA__"
+              alt="Brand Icon"
+            />
+            <b>Marmeto</b>
+          </div>
+        </div>
+
+        <ul class="menu">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+
+        <div class="nav-icons">
+          <i class="fas fa-search" title="Search"></i>
+          <i class="fas fa-heart" title="Favorites"></i>
+          <i class="fas fa-shopping-cart" title="Cart"></i>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eQ~Ob1JfIzwztu98MeKCLhmFDsSaM5jYcgxP-Ly2Tr5OwtVarco-JLG09CZRJS3Eee~widDH5oBu4OSsPtHIBXXHT5Da5WK3~8pw70It-wNPaXbA3z89y1OWl-aRWqj7R1jh4e287I6kIxtmhxKF2Zo9mxw9aZLY6Gp4Kmrbnm2Gneb2BxfQxC7ptSZeJUh5RDV59-ptrsMitGTbiE5XhDw8Xls5P9r040aa8oRrVYD93cS9NlpSDQcPMnSym9P5M720gfKsgO4kLj8rnpsA~e1~iIYm0rOayKgsXxfMHTO-HATWs5i1wEYPH3MEPYRqwwFWLNaWZ33XutpZcDBKeA__"
+              alt="Brand Icon"
+            />
+            <h2>Cart</h2>
+          </div>
+          <div>Home > Cart</div>
+        </div>
+      </div>
+
+      <div class="cart-detail">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        <div class="cart-total">
+          <h2>Cart Totals</h2>
+          <div class="subtotal">
+
+          </div>
+          <div class="total-box">
+            <p>Total</p>
+            <p class="total"></p>
+          </div>
+          <div class="btn">
+            <button>Check Out</button>
+          </div>
+        </div>
+      </div>
+
+   
+
+      <div class="footer">
+        <div class="footer-content">
+          <div>
+            <img src="https://i.postimg.cc/s2pxYHtb/trophy.png"/>
+          </div>
+          <div>
+            <div class="footer-header">High Quality</div>
+            <div>crafted from top materials</div>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div>
+            <img src="https://i.postimg.cc/L67Tqhkh/guarantee.png"/>
+          </div>
+          <div>
+            <div class="footer-header" >Warranty Protection</div>
+            <div>Over 2 years</div>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div>
+            <img src="https://i.postimg.cc/fLPbD4Xt/box.png"/>
+          </div>
+          <div>
+            <div class="footer-header">Free Shipping</div>
+            <div>Order over 150 $</div>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div>
+            <img src="https://i.postimg.cc/SNvnkM61/support.png"/>
+          </div>
+          <div>
+            <div class="footer-header">24 / 7 Support</div>
+            <div>Dedicated support</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2>Are you sure you want to delete?</h2>
+          <div class="modal-buttons">
+            <button id="cancelBtn">Cancel</button>
+            <button id="confirmBtn">Confirm</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+  </body>
+</html>
